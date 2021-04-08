@@ -1,10 +1,10 @@
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import AppContext from '../../context/AppContext';
-// import loginData from '../../services/general/fetchLoginData';
+import loginData from '../../services/fetchLoginData';
 
-const login = async (/* userData, setUserData, props */) => {
-  /* const usuario = await loginData(userData);
+const login = async (userData, setUserData, props) => {
+  const usuario = await loginData(userData);
   setUserData({
     ...userData,
     id: usuario.id,
@@ -17,7 +17,7 @@ const login = async (/* userData, setUserData, props */) => {
     name: usuario.name,
     email: usuario.email,
   }));
-  return props.history.push('/products'); */
+  return props.history.push('/comics');
 };
 
 export default function LoginButtonEntrar({ props }) {
