@@ -1,43 +1,18 @@
 import React from 'react';
+import LoginEmailInput from '../components/LoginPage/LoginEmailInput';
+import LoginSenhaInput from '../components/LoginPage/LoginSenhaInput';
+import LoginButtonEntrar from '../components/LoginPage/LoginButtonEntrar';
+import LoginButtonRegister from '../components/LoginPage/LoginButtonRegister';
 
-export default function LoginPage() {
-
+export default function LoginPage(props) {
   return (
     <div className="login">
       <div className="inputs">
-        <label htmlFor="email" className="label">
-          Email
-          <input
-            type="text"
-            id="email"
-            data-testid="email-input"
-            className="input"
-          />
-        </label>
-        <label htmlFor="senha" className="label">
-          Senha
-          <input
-            type="password"
-            id="senha"
-            data-testid="password-input"
-            className="input"
-          />
-        </label>
+        <LoginEmailInput />
+        <LoginSenhaInput />
       </div>
-      <button
-        type="button"
-        data-testid="signin-btn"
-        className="entrar"
-      >
-        ENTRAR
-      </button>
-      <button
-        type="button"
-        data-testid="no-account-btn"
-        className="semConta"
-      >
-        Ainda não tenho conta
-      </button>
+      <LoginButtonEntrar props={ props } />
+      <LoginButtonRegister />
     </div>
   );
 }
