@@ -5,6 +5,7 @@ import loginData from '../../services/fetchLoginData';
 
 const login = async (userData, setUserData, props) => {
   const usuario = await loginData(userData);
+  console.log(usuario);
   setUserData({
     ...userData,
     id: usuario.id,
