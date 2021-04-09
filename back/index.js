@@ -1,6 +1,6 @@
 const express = require('express')
 const cors = require('cors');
-const router = require('./routers/router');
+var router = require('./controllers/userController');
 
 const app = express();
 
@@ -8,5 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 app.use('/', router);
+app.get('/', (req, res) => res.status(200).json('tudo certo'))
 
-app.listen(3001, () => console.log('Run 127.0.0.1:3001'));
+const PORT = 3001;
+app.listen(PORT, () => console.log(`PORT: ${PORT} on`));
