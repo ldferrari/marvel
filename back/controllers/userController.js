@@ -2,13 +2,14 @@ const { Router } = require('express');
 const rescue = require('express-rescue');
 const userService = require('../services/userService');
 
-const user = Router();
+const userRouter = Router();
 
 const createdCode = 201;
 
-user.post(
+userRouter.post(
   '/login',
   rescue(async (req, res, next) => {
+    console.log('entrou');
     const user = await userService.validationUser(req.body);
     if (user.error) {
       return next(user);
@@ -17,7 +18,7 @@ user.post(
   }),
 );
 
-user.post('/register', rescue(async (req, res, next) => {
+userRouter.post('/register', rescue(async (req, res, next) => {
   const user = await userService.create(req.body);
   if (user.error) {
     return next(user);
@@ -26,4 +27,4 @@ user.post('/register', rescue(async (req, res, next) => {
   res.status(createdCode).json(userWithoutPassword);
 }));
 
-module.exports = user;
+module.exports = userRouter;

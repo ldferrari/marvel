@@ -1,5 +1,5 @@
 const crypto = require('crypto');
-const User = require('../models/userModel');
+const { User } = require('../models');
 
 const passwordLength = 6;
 const tokenLength = 8;
