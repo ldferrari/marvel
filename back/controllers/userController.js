@@ -17,7 +17,7 @@ userRouter.post('/login', rescue(async (req, res, next) => {
 
 userRouter.post('/register', rescue(async (req, res, next) => {
   const user = await userService.create(req.body);
-  console.log(user);
+  console.log(`user pos server = ${user.message}`);
   if (user.error) {
     return next(user);
   }
