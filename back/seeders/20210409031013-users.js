@@ -6,7 +6,7 @@ module.exports = {
       {
         name: 'Testador',
         email: 'test@marvel.com.br',
-        password: '123456',
+        password: '$2b$05$3Wey6FQoAdi26Cy9Pr9.zeQVywcPMPypCGlBohb0198cPJRtSIt8i',
       },
     ], {});
   },

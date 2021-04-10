@@ -1,5 +1,6 @@
 const { User } = require('../models');
 const createTokenJWT = require('./createJWT');
+const { passwordHash, matchPassword } = require('./passwordHash');
 
 const passwordLength = 6;
 
@@ -55,7 +56,10 @@ const isUserRegistered = async (email) => {
 
 const isPasswordCorrect = async (email, password) => {
   const user = await getByEmail(email);
-  if (user && user.dataValues.password !== password) {
+  const pass = user.dataValues.password; 
+  const match = await matchPassword(password, pass);
+  console.log(match);
+  if (user && !match) {
     return {
       error: true,
       code: 'invalid_user',
@@ -67,6 +71,7 @@ const isPasswordCorrect = async (email, password) => {
 const validateUserData = async (email, password) => {
   const user = await getByEmail(email);
   const passwordCorrect = await isPasswordCorrect(email, password);
+  console.log(passwordCorrect);
   const emailValid = await isEmailvalid(email);
   const passwordFilled = await isPasswordFilled(password);
   const passwordValid = await isPasswordValid(password);
@@ -99,6 +104,7 @@ const validationUser = async (body) => {
 
 const create = async (user) => {
   const { name, email, password } = user;
+  const passwordH = await passwordHash(password)
   const validation = await getByEmail(email);
   if (validation) {
     return {
@@ -107,7 +113,7 @@ const create = async (user) => {
       message: 'E-mail already in database.',
     };
   }
-  return User.create({ name, email, password });
+  return User.create({ name, email, password: passwordH });
 };
 
 const update = async (id, name) => {
@@ -121,7 +127,6 @@ const update = async (id, name) => {
       message: 'User not found',
     };
   }
-
   await User.update({ name }, { where: { id }});
   return ({ id, name, message: 'success' });
 };
