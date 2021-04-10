@@ -9,7 +9,6 @@ const createdCode = 201;
 userRouter.post(
   '/login',
   rescue(async (req, res, next) => {
-    console.log('entrou');
     const user = await userService.validationUser(req.body);
     if (user.error) {
       return next(user);
