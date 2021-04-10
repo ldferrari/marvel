@@ -6,9 +6,7 @@ const userRouter = Router();
 
 const createdCode = 201;
 
-userRouter.post(
-  '/login',
-  rescue(async (req, res, next) => {
+userRouter.post('/login', rescue(async (req, res, next) => {
     const user = await userService.validationUser(req.body);
     if (user.error) {
       return next(user);
@@ -19,6 +17,7 @@ userRouter.post(
 
 userRouter.post('/register', rescue(async (req, res, next) => {
   const user = await userService.create(req.body);
+  console.log(user);
   if (user.error) {
     return next(user);
   }
