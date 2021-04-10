@@ -1,8 +1,7 @@
-const crypto = require('crypto');
 const { User } = require('../models');
+const createTokenJWT = require('./createJWT');
 
 const passwordLength = 6;
-const tokenLength = 8;
 
 const emailValido = (email) => {
   const regexMail = /^\w+([.-]?\w+)@\w+([.-]?\w+)(.\w{2,3})+$/;
@@ -87,7 +86,7 @@ const validateUserData = async (email, password) => {
 const validationUser = async (body) => {
   const { email, password } = body;
   const user = await validateUserData(email, password);
-  const token = crypto.randomBytes(tokenLength).toString('hex');
+  const token = createTokenJWT(user);
   if (user.error) return user;
   return {
     token,
