@@ -1,7 +1,6 @@
 const URL = 'http://localhost:3001/register';
 
 const fetchUserData = async (userData) => {
-  console.log(`userData`);
   const response = await fetch(URL, {
   method: 'POST',
   headers: {

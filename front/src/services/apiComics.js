@@ -1,7 +1,11 @@
-const APIurl = 'http://localhost:3001/comics';
+const ts = "1618100562";
+const publicKey = "2eb0a4ac22e5b11aaddf0756a54841ee";
+const md5 ="5140f191abeb406178be7dc51850d8ae";
 
-const apiComics = async () => fetch(APIurl)
-  .then((products) => products.json().then((data) => data));
+const comicsUrl = `https://gateway.marvel.com:443/v1/public/comics?ts=${ts}&apikey=${publicKey}&hash=${md5}`;
+
+const apiComics = async () => fetch(comicsUrl)
+  .then((comicsAll) => comicsAll.json().then((data) => data.data.results));
 
 apiComics();
 

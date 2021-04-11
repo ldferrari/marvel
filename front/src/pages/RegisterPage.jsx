@@ -20,48 +20,20 @@ const setLocalStorage = async (userData) => {
   );
 };
 
-/* const checked = (setUserData, userData) => {
-  const isChecked = document.getElementById('want-to-sell').checked;
-  console.log(isChecked, 'isChecked');
-  if (isChecked) {
-    setUserData({ ...userData, role: 'administrator' });
-  } else {
-    setUserData({ ...userData, role: 'client' });
-  }
-}; */
-
-/* const redirectRole = async (userData, props, role) => {
-  if (role === 'client') {
-    console.log('entrei no if');
-    await setLocalStorage(userData);
-    return props.history.push('/products');
-  }
-
-  if (role === 'administrator') {
-    await setLocalStorage(userData);
-    return props.history.push('/admin/orders');
-  }
-}; */
-
 const isUserRegistered = async (estados) => {
   const { setEmailRegistered, userData, props } = estados;
   const { message } = await fetchUserData(userData);
-  console.log(`message = ${message}`);
   if (message === 'E-mail already in database.') {
-    console.log('setar e-mail true');
-    setEmailRegistered(true);
+    return setEmailRegistered(true);
   }
-  console.log('entrei no validador');
   setEmailRegistered(false);
   await setLocalStorage(userData);
   return props.history.push('/comics');
-  /* redirectRole(userData, props); */
 };
 
 export default function RegisterPage(props) {
   const { isNameValid, setNameValid, isEmailValid } = useContext(AppContext);
   const { setEmailValid, isEmailRegistered } = useContext(AppContext);
-  console.log(isEmailRegistered);
   const { isPasswordValid, setPasswordValid } = useContext(AppContext);
   const { userData, setUserData, setEmailRegistered } = useContext(AppContext);
   const estados = { setEmailRegistered, userData, props };
@@ -134,10 +106,7 @@ export default function RegisterPage(props) {
             type="button"
             data-testid="signup-btn"
             className="cadastrar"
-            onClick={ async () => {
-              /* checked(setUserData, userData); */
-              isUserRegistered(estados);
-            } }
+            onClick={ async () => isUserRegistered(estados)}
             disabled={ !isNameValid || !isEmailValid || !isPasswordValid }
           >
             Cadastrar
