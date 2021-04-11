@@ -4,7 +4,6 @@ const bcrypt = require('bcrypt');
 const passwordHash = (password) => {
   const salt = bcrypt.genSaltSync(5);
   const newPassword = bcrypt.hashSync(password, salt);
-  console.log(`newPassword = ${newPassword}`);
   return newPassword;
 };
 

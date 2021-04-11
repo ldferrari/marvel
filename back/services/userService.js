@@ -58,7 +58,6 @@ const isPasswordCorrect = async (email, password) => {
   const user = await getByEmail(email);
   const pass = user.dataValues.password; 
   const match = await matchPassword(password, pass);
-  console.log(match);
   if (user && !match) {
     return {
       error: true,
@@ -71,7 +70,6 @@ const isPasswordCorrect = async (email, password) => {
 const validateUserData = async (email, password) => {
   const user = await getByEmail(email);
   const passwordCorrect = await isPasswordCorrect(email, password);
-  console.log(passwordCorrect);
   const emailValid = await isEmailvalid(email);
   const passwordFilled = await isPasswordFilled(password);
   const passwordValid = await isPasswordValid(password);
