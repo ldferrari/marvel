@@ -3,6 +3,7 @@ import { Redirect, Route, Switch } from 'react-router-dom';
 import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ComicsPage from './pages/ComicsPage';
+import CharactersPage from './pages/CharactersPage';
 import Provider from './context/Provider';
 import './App.css';
 
@@ -14,6 +15,7 @@ function App() {
           <Route path="/login" component={ LoginPage } />
           <Route path="/register" component={ RegisterPage } />
           <Route path="/comics" component={ ComicsPage } />
+          <Route path="/characters" component={ CharactersPage } />
           <Route path="/" component={ () => <Redirect to="/login" /> } />
         </Switch>
       </Provider>

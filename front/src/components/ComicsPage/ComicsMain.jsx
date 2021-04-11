@@ -7,8 +7,8 @@ export default function comicsMain() {
   const { comicsItens } = useContext(AppContext);
   return (
     <div className="listComicsItens marginTop">
-      {comicsItens.map((comicsIten, index) => (
-        <ComicsCard key={ comicsIten.id } index={ index } comicsIten={ comicsIten } />
+      {comicsItens.map((comicsIten) => (
+        <ComicsCard key={ comicsIten.id } comicsIten={ comicsIten } />
       ))}
     </div>
   );

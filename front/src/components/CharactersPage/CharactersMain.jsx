@@ -1,0 +1,20 @@
+import React, { useContext } from 'react';
+import PropTypes from 'prop-types';
+import CharactersCard from './CharactersCard';
+import AppContext from '../../context/AppContext';
+
+export default function CharactersMain() {
+  const { charactersItens } = useContext(AppContext);
+  console.log(charactersItens);
+  return (
+    <div className="listCharactersItens marginTop">
+      {charactersItens.map((charactersIten) => (
+        <CharactersCard key={ charactersIten.id } charactersIten={ charactersIten } />
+      ))}
+    </div>
+  );
+}
+
+CharactersMain.propTypes = {
+  charactersItens: PropTypes.arrayOf(PropTypes.object).isRequired,
+};

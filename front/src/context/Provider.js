@@ -18,6 +18,7 @@ const Provider = ({ children }) => {
   const [isPasswordValid, setPasswordValid] = useState(false);
   const [isEmailRegistered, setEmailRegistered] = useState(false);
   const [comicsItens, setComicsItens] = useState([]);
+  const [charactersItens, setCharactersItens] = useState([]);
   const context = {
     initialUser,
     userData,
@@ -31,7 +32,9 @@ const Provider = ({ children }) => {
     isEmailRegistered,
     setEmailRegistered,
     comicsItens,
-    setComicsItens
+    setComicsItens,
+    charactersItens,
+    setCharactersItens
   };
   
   return <AppContext.Provider value={ context }>{children}</AppContext.Provider>;
