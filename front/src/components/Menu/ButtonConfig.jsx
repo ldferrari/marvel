@@ -6,10 +6,10 @@ export default function ButtonConfig() {
   return (
     <Link
       to="/characters"
-      className="buttonLateral"
+      className="linkConfig"
     >
-      <button>
-        <img src={ configButton } />
+      <button className="buttonConfig">
+        <img src={ configButton } className="imgConfig" />
       </button>
     </Link>
   );

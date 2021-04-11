@@ -5,9 +5,8 @@ export default function ButtonComics() {
   return (
     <Link
       to="/comics"
-      className="buttonLateral"
     >
-      <button>
+      <button className="buttonMenu">
         Comics
       </button>
     </Link>
