@@ -5,10 +5,6 @@ import apiComics from '../services/apiComics';
 //import Menu from '../../components/client/Menu';
 import ComicsMain from '../components/ComicsPage/ComicsMain';  
 
-/* const effectUse = async ({ setComicsItens }) => {
-  apiComics().then((response) => setComicsItens(response));
-}; */
-
 const Comics = () => {
   const token = localStorage.getItem('token') || null;
   const { setComicsItens } = useContext(AppContext);

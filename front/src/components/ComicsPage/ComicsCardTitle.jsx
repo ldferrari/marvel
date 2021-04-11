@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-export default function ProdutCardTitle(props) {
+export default function ComicsCardTitle(props) {
   const { comicsIten } = props;
   return (
     <div className="cart-name">
@@ -10,6 +10,6 @@ export default function ProdutCardTitle(props) {
   );
 }
 
-ProdutCardTitle.propTypes = {
+ComicsCardTitle.propTypes = {
   comicsIten: PropTypes.arrayOf(PropTypes.object).isRequired
 };
