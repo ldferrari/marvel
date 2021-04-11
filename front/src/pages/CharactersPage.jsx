@@ -2,7 +2,7 @@ import React, { useEffect, useContext } from 'react';
 import { Redirect } from 'react-router-dom';
 import AppContext from '../context/AppContext';
 import apiCharacters from '../services/apiCharacters';
-//import Menu from '../../components/client/Menu';
+import Menu from '../components/Menu/Menu';
 import CharactersMain from '../components/CharactersPage/CharactersMain';  
 
 const Characters = () => {
@@ -13,7 +13,7 @@ const Characters = () => {
   if (!token) return <Redirect to="/login" />;
   return (
     <div>
-      {/* <Menu title="Marvel" /> */}
+      <Menu />
       <CharactersMain />
     </div>
   );
