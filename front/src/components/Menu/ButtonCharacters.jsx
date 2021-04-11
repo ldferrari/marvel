@@ -5,9 +5,8 @@ export default function ButtonCharacter() {
   return (
     <Link
       to="/characters"
-      className="buttonLateral"
     >
-      <button>
+      <button className="buttonMenu">
         Characters
       </button>
     </Link>
