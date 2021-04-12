@@ -10,7 +10,7 @@ const Characters = () => {
   const { setCharactersItens } = useContext(AppContext);
   useEffect( async () => apiCharacters().then((response) => setCharactersItens(response)),
     [setCharactersItens]);
-  if (!token) return <Redirect to="/login" />;
+  if (!token || token === "undefined") return <Redirect to="/login" />;
   return (
     <div>
       <Menu />

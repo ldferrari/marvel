@@ -5,7 +5,6 @@ import AppContext from '../../context/AppContext';
 
 export default function CharactersMain() {
   const { charactersItens } = useContext(AppContext);
-  console.log(charactersItens);
   return (
     <div className="listCharactersItens marginTop">
       {charactersItens.map((charactersIten) => (

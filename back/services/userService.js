@@ -114,7 +114,8 @@ const create = async (user) => {
   return User.create({ name, email, password: passwordH });
 };
 
-const update = async (id, name) => {
+const update = async (id, name, email, password) => {
+  const passwordH = await passwordHash(password)
   const userExists = await User.findOne({
     where: { id }
   });
@@ -125,8 +126,8 @@ const update = async (id, name) => {
       message: 'User not found',
     };
   }
-  await User.update({ name }, { where: { id }});
-  return ({ id, name, message: 'success' });
+  await User.update({ name, email, password: passwordH }, { where: { id }});
+  return ({ id, name, email, message: 'success' });
 };
 
 module.exports = {

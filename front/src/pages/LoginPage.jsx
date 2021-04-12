@@ -3,16 +3,21 @@ import LoginEmailInput from '../components/LoginPage/LoginEmailInput';
 import LoginSenhaInput from '../components/LoginPage/LoginSenhaInput';
 import LoginButtonEntrar from '../components/LoginPage/LoginButtonEntrar';
 import LoginButtonRegister from '../components/LoginPage/LoginButtonRegister';
+import marvelLogin from '../image/marvelLogin.jpg';
+import '../css/login.css';
 
 export default function LoginPage(props) {
   return (
     <div className="login">
       <div className="inputs">
-        <LoginEmailInput />
-        <LoginSenhaInput />
+        <div className="entrar">
+          <LoginEmailInput />
+          <LoginSenhaInput />
+          <LoginButtonEntrar props={ props } />
+        </div>
+        <LoginButtonRegister />
       </div>
-      <LoginButtonEntrar props={ props } />
-      <LoginButtonRegister />
+      <img src={ marvelLogin } />
     </div>
   );
 }

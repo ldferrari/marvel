@@ -10,7 +10,7 @@ const Comics = () => {
   const { setComicsItens } = useContext(AppContext);
   useEffect( async () => apiComics().then((response) => setComicsItens(response)),
     [setComicsItens]);
-  if (!token) return <Redirect to="/login" />;
+  if (!token || token === "undefined") return <Redirect to="/login" />;
   return (
     <div>
       <Menu />

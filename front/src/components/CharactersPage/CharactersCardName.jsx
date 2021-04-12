@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 
 export default function CharactersCardName(props) {
   const { charactersIten } = props;
-  console.log(charactersIten);
   return (
     <div className="cart-name">
       { charactersIten.name }
