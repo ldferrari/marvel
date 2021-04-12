@@ -9,7 +9,6 @@ export default function LoginEmailInput() {
       Email
       <input
         id="email"
-        data-testid="email-input"
         className="input"
         onChange={ (event) => {
           if (validateEmail(event.target.value)) {

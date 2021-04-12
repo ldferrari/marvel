@@ -1,0 +1,150 @@
+@media only screen and ( min-width : 600px ) {
+
+  .allRegistro {
+    background-color: rgb(49, 49, 49);
+    height: 100%;
+  }
+
+  .registerHeader {
+    align-items: center;
+    display: flex;
+    background-color: rgb(235, 15, 15);
+    flex-direction: row;
+    height: 10%;
+    justify-content: space-around;
+  }
+
+  .title {
+    color: rgb(245, 188, 0);
+    font-family: 'RobotoCondensed Bold', sans-serif;;
+    font-size: 50px;
+    margin: 0;
+    text-align: center;
+    -webkit-text-stroke-color: rgb(43, 43, 43); /* cor da borda */
+    -webkit-text-stroke-width: 1.0px; /* largura da borda */
+  }
+
+  .marvelImage {
+    border-color: transparent;
+    height: 100%;
+  }
+
+  .bodyRegistro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+  }
+
+  .labelRegistro {
+    color: rgb(248, 242, 230);
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 1% 30%;
+  }
+
+  .inputRegistro {
+    height: 30px;
+    font-size: 18px;
+    margin: 5px 0;
+    padding: 0 10px;
+  }
+
+  .labelCheckRegistro {
+    font-size : 25px;
+    margin: 7% 30%;
+  }
+
+  .inputCheckRegistro {
+    height: 20px;
+    width: 50px;
+  }
+
+  .alradyDB {
+    color: rgb(145, 9, 9);
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .cadastrar {
+    background-color: rgb(235, 15, 15);
+    font-size: 18px;
+    height: 50px;
+    margin: 10% 35%;
+    width: 30%;
+  }
+}
+
+@media only screen and ( max-width : 600px ) {
+
+  .allRegistro {
+    background-color: rgb(49, 49, 49);
+    height: 100%;
+  }
+
+  .registerHeader {
+    align-items: center;
+    display: flex;
+    background-color: rgb(235, 15, 15);
+    flex-direction: row;
+    height: 10%;
+    justify-content: space-around;
+  }
+
+  .title {
+    color: rgb(245, 188, 0);
+    font-family: 'RobotoCondensed Bold', sans-serif;;
+    font-size: 20px;
+    margin: 0;
+    text-align: center;
+    -webkit-text-stroke-color: rgb(43, 43, 43); /* cor da borda */
+    -webkit-text-stroke-width: 1.0px; /* largura da borda */
+  }
+
+  .marvelImage {
+    border-color: transparent;
+    height: 100%;
+  }
+
+  .bodyRegistro {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20%;
+  }
+
+  .labelRegistro {
+    display: flex;
+    flex-direction: column;
+    font-size: 25px;
+    margin: 2% 10%;
+  }
+
+  .inputRegistro {
+    height: 20px;
+    margin: 5px 0;
+  }
+
+  .labelCheckRegistro {
+    font-size : 25px;
+    margin: 7% 10%;
+  }
+
+  .inputCheckRegistro {
+    height: 20px;
+    width: 50px;
+  }
+
+  .alradyDB {
+    color: rgb(145, 9, 9);
+    font-weight: 900;
+    text-align: center;
+  }
+
+  .cadastrar {
+    background-color: rgb(235, 15, 15);
+    font-size: 18px;
+    height: 50px;
+    margin: 35% 15% 10%;
+    width: 70%;
+  }
+}
