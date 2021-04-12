@@ -1,4 +1,4 @@
 export default function validateName(name) {
-  const re = /^[a-z\s]{1,}$/i;
+  const re = /^[A-Za-záàâãéèêíïóôõöúçñÁÀÂÃÉÈÍÏÓÔÕÖÚÇÑ ]+$/i;
   return re.test(name);
 }

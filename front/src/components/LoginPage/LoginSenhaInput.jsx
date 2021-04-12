@@ -10,7 +10,6 @@ export default function LoginSenhaInput() {
       <input
         type="password"
         id="senha"
-        data-testid="password-input"
         className="input"
         onChange={ (event) => {
           if (validatePassword(event.target.value)) {

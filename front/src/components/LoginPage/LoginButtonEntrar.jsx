@@ -26,9 +26,8 @@ export default function LoginButtonEntrar({ props }) {
   return (
     <button
       type="button"
-      data-testid="signin-btn"
       disabled={ !isEmailValid || !isPasswordValid }
-      className="entrar"
+      className="entrarButton"
       onClick={ () => {
         login(userData, setUserData, props);
       } }

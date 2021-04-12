@@ -1,0 +1,188 @@
+@media only screen and ( min-width : 600px ) {
+
+  .sideMenuContainer {
+    background: rgb(235, 15, 15);
+    display: flex;
+    flex-direction:row;
+    height: 10%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .menuUserDate {
+    align-content: center;
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    justify-content: space-between;
+    top: 0;
+    width: 15%;
+  }
+
+  .linkConfig {
+    height: 100%;
+    width: 50%;
+  }
+
+  .buttonConfig {
+    background: transparent;
+    border-color: transparent;
+    height: 100%;
+    width: 100%;
+  }
+
+  .name {
+    align-self: center;
+    color: rgb(248, 242, 230);
+    font-family: 'RobotoCondensed Bold', sans-serif;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 25px;
+  }
+
+  .menuCenter {
+    display: flex;
+    flex-direction:column;
+  }
+
+  .imgConfig {
+    height: 50%;
+    width: 50%;
+  }
+
+  .marvelMenuImage {
+    border-color: transparent;
+    height: 50%;
+  }
+
+  .menuButtonsCenter {
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+  }
+
+  .menuButtonsRight {
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+    width: 15%;
+  }
+
+  .buttonMenu {
+    background-color: rgb(221, 7, 7);
+    border-color: transparent;
+    border-radius: 5%;
+    color: white;
+    font-family: 'RobotoCondensed Bold', sans-serif;
+    font-weight: 900;
+    font-size: 12px;
+    height: 20%;
+    margin: 0 2px;
+    text-transform: uppercase;
+    width: 120px;
+  }
+}
+
+@media only screen and ( max-width : 600px ) {
+
+  .sideMenuContainer {
+    background: rgb(235, 15, 15);
+    display: flex;
+    flex-direction:row;
+    height: 13%;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+
+  .menuUserDate {
+    align-content: center;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+    top: 0;
+    width: 15%;
+  }
+
+  .linkConfig {
+    height: 80%;
+    width: 100%;
+  }
+
+  .buttonConfig {
+    background: transparent;
+    border-color: transparent;
+    height: 100%;
+    width: 100%;
+  }
+
+  .name {
+    align-self:center;
+    color: rgb(248, 242, 230);
+    font-family: 'RobotoCondensed Bold', sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+  }
+  
+  .menuCenter {
+    display: flex;
+    flex-direction:column;
+    width: 70%;
+  }
+
+  .imgConfig {
+    height: 50%;
+    width: 50%;
+  }
+
+  .marvelMenuImage {
+    height: 65%;
+    border-color: transparent;
+  }
+
+  .menuButtonsCenter {
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+  }
+
+
+  .menuButtonsRight {
+    align-items: center;
+    display: flex;
+    flex-direction:row;
+    height: 100%;
+    justify-content: center;
+    top: 0;
+    width: 15%;
+  }
+
+  .buttonMenu {
+    background-color: rgb(221, 7, 7);
+    border-color: transparent;
+    border-radius: 5%;
+    color: white;
+    font-family: 'RobotoCondensed Bold', sans-serif;
+    font-weight: 900;
+    font-size: 10px;
+    height: 20%;
+    margin: 0 1px;
+    text-transform: uppercase;
+    width: 85px;
+  }
+}
