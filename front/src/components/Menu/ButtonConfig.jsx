@@ -5,7 +5,7 @@ import configButton from '../../image/configButton.png';
 export default function ButtonConfig() {
   return (
     <Link
-      to="/characters"
+      to="/profile"
       className="linkConfig"
     >
       <button className="buttonConfig">
