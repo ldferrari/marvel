@@ -7,7 +7,7 @@ export default function ButtonCharacter() {
       to="/characters"
     >
       <button className="buttonMenu">
-        Characters
+        Personagens
       </button>
     </Link>
   );

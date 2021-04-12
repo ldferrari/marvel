@@ -8,7 +8,7 @@
   .registerHeader {
     align-items: center;
     display: flex;
-    background-color: rgb(235, 15, 15);
+    background-color: rgb(236, 28, 28);
     flex-direction: row;
     height: 10%;
     justify-content: space-around;
@@ -67,7 +67,7 @@
   }
 
   .cadastrar {
-    background-color: rgb(235, 15, 15);
+    background-color: rgb(236, 28, 28);
     font-size: 18px;
     height: 50px;
     margin: 10% 35%;
@@ -85,7 +85,7 @@
   .registerHeader {
     align-items: center;
     display: flex;
-    background-color: rgb(235, 15, 15);
+    background-color: rgb(236, 28, 28);
     flex-direction: row;
     height: 10%;
     justify-content: space-around;
@@ -141,7 +141,7 @@
   }
 
   .cadastrar {
-    background-color: rgb(235, 15, 15);
+    background-color: rgb(236, 28, 28);
     font-size: 18px;
     height: 50px;
     margin: 35% 15% 10%;

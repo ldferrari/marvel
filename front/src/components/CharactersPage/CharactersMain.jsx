@@ -6,7 +6,7 @@ import AppContext from '../../context/AppContext';
 export default function CharactersMain() {
   const { charactersItens } = useContext(AppContext);
   return (
-    <div className="listCharactersItens marginTop">
+    <div className="listItens marginTop">
       {charactersItens.map((charactersIten) => (
         <CharactersCard key={ charactersIten.id } charactersIten={ charactersIten } />
       ))}

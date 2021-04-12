@@ -6,7 +6,7 @@ import AppContext from '../../context/AppContext';
 export default function comicsMain() {
   const { comicsItens } = useContext(AppContext);
   return (
-    <div className="listComicsItens marginTop">
+    <div className="listItens marginTop">
       {comicsItens.map((comicsIten) => (
         <ComicsCard key={ comicsIten.id } comicsIten={ comicsIten } />
       ))}

@@ -7,7 +7,7 @@ export default function ButtonComics() {
       to="/comics"
     >
       <button className="buttonMenu">
-        Comics
+        Quadrinhos
       </button>
     </Link>
   );
