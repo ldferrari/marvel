@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from 'react';
 import { Redirect } from 'react-router-dom';
 import AppContext from '../context/AppContext';
-import apiCharacters from '../services/apiCharacters';
+import { apiCharacters } from '../services/apiCharacters';
 import Menu from '../components/Menu/Menu';
 import CharactersMain from '../components/CharactersPage/CharactersMain';
 import '../css/comics_characters.css';

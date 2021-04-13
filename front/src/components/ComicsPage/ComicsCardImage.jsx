@@ -7,7 +7,6 @@ export default function ComicsCardImage(props) {
     <div>
       <div className="divImage">
         <img
-          height="70px"
           src={ comicsIten.thumbnail.path+'.'+comicsIten.thumbnail.extension }
           className="card-image"
           alt={ comicsIten.name }

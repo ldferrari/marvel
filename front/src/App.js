@@ -4,6 +4,8 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ComicsPage from './pages/ComicsPage';
 import CharactersPage from './pages/CharactersPage';
+import DatailsComicPage from './pages/DetailsComicPage';
+import DatailsCharacterPage from './pages/DetailsCharacterPage';
 import ProfilePage from './pages/ProfilePage';
 import Provider from './context/Provider';
 import './App.css';
@@ -15,10 +17,12 @@ function App() {
         <Switch>
           <Route path="/login" component={ LoginPage } />
           <Route path="/register" component={ RegisterPage } />
-          <Route path="/comics" component={ ComicsPage } />
-          <Route path="/characters" component={ CharactersPage } />
+          <Route path="/comics/:id_comics" component={ DatailsComicPage } />
+          <Route path="/characters/:id_characters" component={ DatailsCharacterPage } />
+          <Route exact path="/comics" component={ ComicsPage } />
+          <Route exact path="/characters" component={ CharactersPage } />
           <Route path="/profile" component={ ProfilePage } />
-          <Route path="/" component={ () => <Redirect to="/login" /> } />
+          <Route exact path="/" component={ () => <Redirect to="/login" /> } />
         </Switch>
       </Provider>
     </div>

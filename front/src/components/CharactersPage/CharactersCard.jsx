@@ -1,20 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 import CharactersCardImage from './CharactersCardImage';
 import CharactersCardName from './CharactersCardName';
+import CharactersFavoriteButton from './CharactersFavoriteButton';
 
 const CharactersCard = (props) => {
-  const { charactersIten } = props;
+  const { characterItens } = props;
+  const id_character = characterItens.id;
   return (
     <div className="card-body">
-      <CharactersCardImage charactersIten={ charactersIten } />
-      <CharactersCardName charactersIten={ charactersIten } />
+      <Link to={`/characters/${id_character}`}>
+        <CharactersCardImage characterItens={ characterItens } />
+        <CharactersCardName characterItens={ characterItens } />
+      </Link>
+        <CharactersFavoriteButton characterItens={ characterItens }/>
     </div>
   );
 };
 
 CharactersCard.propTypes = {
-  charactersIten: PropTypes.arrayOf(PropTypes.object).isRequired,
+  characterItens: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default CharactersCard;
