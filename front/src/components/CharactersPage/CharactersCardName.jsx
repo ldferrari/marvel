@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function CharactersCardName(props) {
-  const { charactersIten } = props;
+  const { characterItens } = props;
   return (
     <div className="cart-name">
-      { charactersIten.name }
+      { characterItens.name }
     </div>
   );
 }
 
 CharactersCardName.propTypes = {
-  charactersIten: PropTypes.arrayOf(PropTypes.object).isRequired
+  characterItens: PropTypes.arrayOf(PropTypes.object).isRequired
 };

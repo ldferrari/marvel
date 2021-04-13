@@ -2,15 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function CharactersCardImage(props) {
-  const { charactersIten } = props;
+  const { characterItens } = props;
   return (
     <div>
       <div className="divImage">
         <img
-          height="70px"
-          src={ charactersIten.thumbnail.path+'.'+charactersIten.thumbnail.extension }
+          src={ characterItens.thumbnail.path+'.'+characterItens.thumbnail.extension }
           className="card-image"
-          alt={ charactersIten.name }
+          alt={ characterItens.name }
         />
       </div>
     </div>
@@ -18,5 +17,5 @@ export default function CharactersCardImage(props) {
 }
 
 CharactersCardImage.propTypes = {
-  charactersIten: PropTypes.arrayOf(PropTypes.object).isRequired
+  characterItens: PropTypes.arrayOf(PropTypes.object).isRequired
 };

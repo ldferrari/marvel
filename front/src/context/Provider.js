@@ -23,6 +23,8 @@ const Provider = ({ children }) => {
   const [nameEqual, setNameEqual] = useState(true);
   const [emailEqual, setEmailEqual] = useState(true);
   const [passwordEqual, setPasswordEqual] = useState(true);
+  const [characterData, setCharacterData] = useState([]);
+  const [comicData, setComicData] = useState([]);
   const context = {
     initialUser,
     userData,
@@ -46,7 +48,11 @@ const Provider = ({ children }) => {
     emailEqual,
     setEmailEqual,
     passwordEqual,
-    setPasswordEqual
+    setPasswordEqual,
+    characterData,
+    setCharacterData,
+    comicData,
+    setComicData,
   };
   
   return <AppContext.Provider value={ context }>{children}</AppContext.Provider>;

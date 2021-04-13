@@ -1,0 +1,141 @@
+@media only screen and ( min-width : 600px ) {
+
+  .characterDatails {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    height: 100%;
+  }
+
+  .datailsBody {
+    background-color: rgb(49, 49, 49);
+    height: auto;
+    padding: 8% 0 0;
+  }  
+
+  .datailsMain {
+    box-shadow: 20px 15px 6px rgba(0, 0, 0, 0.77);
+    display: flex;
+    flex-flow: row wrap;
+    margin: 0 15%;
+  }
+
+  .detailsImage {
+    width: 40%;
+  }
+
+  .cardImage {
+    border-radius: 10px 0  0 10px;
+    height: 100%;
+    width: 100%;
+  }
+
+  .textDetails {
+    display: flex;
+    flex-direction:column;
+    background-color: whitesmoke;
+    border-radius: 0 10px 10px 0;
+    width: 60%;
+  }
+
+  .detailsName {
+    color: black;
+    font-size: 50px;
+    height: 30%;
+    margin: 0 10%;
+    padding: 5% 0 0;
+    width: 80%;
+  }
+
+  .datailsDescription {
+    color: black;
+    font-size: 20px;
+    height: 50%;
+    text-align: center;
+    margin: 0 10%;
+    width: 80%;
+  }
+
+  .coraçãoPreto {
+    width: 7%;
+  }
+
+  .coraçãoVermelho {
+    width: 11%;
+  }
+
+  .check {
+    display: none;
+  }
+}
+
+@media only screen and ( max-width : 600px ) {
+
+  .characterDatails {
+    background-color: rgb(49, 49, 49);
+    color: white;
+    height: 100%;
+  }
+
+  .datailsBody {
+    background-color: rgb(49, 49, 49);
+    height: auto;
+    padding: 28% 0 5%;
+  }
+
+  .datailsMain {
+    box-shadow: 7px 10px 6px rgba(0, 0, 0, 0.77);
+    display: flex;
+    flex-flow: column;
+    margin: 0 5%;
+  }
+
+
+  .detailsImage {
+    width: 100%;
+  }
+
+  .cardImage {
+    border-radius: 10px 10px  0 0;
+    height: 100%;
+    width: 100%;
+  }
+
+  .textDetails {
+    display: flex;
+    flex-direction:column;
+    background-color: whitesmoke;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+  }
+
+  .detailsName {
+    color: black;
+    font-size: 30px;
+    height: 30%;
+    margin: 0 10%;
+    padding: 5% 0 0;
+    width: 80%;
+  }
+
+  .datailsDescription {
+    color: black;
+    font-size: 15px;
+    height: 50%;
+    text-align: center;
+    margin: 0 10%;
+    padding: 5% 0;
+    width: 80%;
+  }
+
+  .coraçãoPreto {
+    width: 12%;
+  }
+
+  .coraçãoVermelho {
+    width: 18%;
+  }
+
+  .check {
+    display: none;
+  }
+}

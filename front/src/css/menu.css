@@ -27,6 +27,7 @@
   }
 
   .buttonConfig {
+    cursor: pointer;
     background: transparent;
     border-color: transparent;
     height: 100%;

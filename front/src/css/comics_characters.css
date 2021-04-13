@@ -4,12 +4,8 @@
     background-color: rgb(49, 49, 49);
     display: flex;
     flex-flow: row wrap;
-    padding-bottom: 40px;
-    padding-top: 90px;
-  }
-
-  .marginTop {
-    margin-top: 2%;
+    padding-bottom: 5%;
+    padding-top: 7%;
   }
 
   .card-body {
@@ -41,10 +37,21 @@
   }
 
   .cart-name {
+    display: flex;
+    flex-flow: column;
     color: black;
     font-size: 16px;
+    height: 45px;
     margin: 10px;
     text-align: center;
+  }
+
+  .coraçãoPretoCP {
+    width: 30px;
+  }
+
+  .coraçãoVermelhoCP {
+    width: 25%;
   }
 }
 
