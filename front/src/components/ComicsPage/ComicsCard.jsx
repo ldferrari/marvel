@@ -3,22 +3,24 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import ComicsCardImage from './ComicsCardImage';
 import ComicsCardTitle from './ComicsCardTitle';
+import ComicsFavoriteButton from './ComicsFavoriteButton';
 
 const ComicsCard = (props) => {
-  const { comicsIten } = props;
-  const id_comics = comicsIten.id;
+  const { comicItens } = props;
+  const id_comics = comicItens.id;
   return (
-    <Link to={`/comics/${id_comics}`}>
-      <div className="card-body">
-        <ComicsCardImage comicsIten={ comicsIten } />
-        <ComicsCardTitle comicsIten={ comicsIten } />
-      </div>
-    </Link>
+    <div className="card-body">
+      <Link to={`/comics/${id_comics}`}>
+        <ComicsCardImage comicItens={ comicItens } />
+        <ComicsCardTitle comicItens={ comicItens } />
+      </Link>
+      <ComicsFavoriteButton comicItens={ comicItens } />
+    </div>
   );
 };
 
 ComicsCard.propTypes = {
-  comicsIten: PropTypes.arrayOf(PropTypes.object).isRequired,
+  comicItens: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default ComicsCard;

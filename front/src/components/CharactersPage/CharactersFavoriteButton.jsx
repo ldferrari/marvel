@@ -45,7 +45,7 @@ function favoriteCharacter(setFavorite, id) {
   return setFavorite(false);
 }
 
-export default function CharactersFavoriteButton({ characterItens }) {
+export default function CharacterFavoriteButton({ characterItens }) {
   const [favorite, setFavorite] = useState(false);
   useEffect(async() => favoriteCharacter(setFavorite, characterItens.id), []);
   return (
@@ -59,6 +59,6 @@ export default function CharactersFavoriteButton({ characterItens }) {
   );
 }
 
-CharactersFavoriteButton.propTypes = {
+CharacterFavoriteButton.propTypes = {
   characterItens: propTypes.object.isRequired,
 };
