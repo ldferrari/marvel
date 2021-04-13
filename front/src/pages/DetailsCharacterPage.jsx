@@ -5,7 +5,7 @@ import AppContext from '../context/AppContext';
 import { apiCharacterByID } from '../services/apiCharacters';
 import Menu from '../components/Menu/Menu';
 import CharacterDatailsMain from '../components/DetailsCharacterPage/CharacterDatailsMain';
-import '../css/characterDetails.css';
+import '../css/details.css';
 
 const CharacterDatails = (props) => {
   const { setCharacterData } = useContext(AppContext);
@@ -16,7 +16,7 @@ const CharacterDatails = (props) => {
   [setCharacterData]);
   if (!token || token === "undefined") return <Redirect to="/login" />;
   return (
-    <div className="characterDatails">
+    <div className="datails">
       <Menu />
       <CharacterDatailsMain />
     </div>

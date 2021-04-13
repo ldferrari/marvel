@@ -5,7 +5,7 @@ export default function CharacterDetailsName() {
   const { characterData } = useContext(AppContext);
   const characterDt = characterData[0];
   return (
-    <div className="detailsName">
+    <div className="detailsNameTitle detailsName">
       {characterDt&&
         characterDt.name
       }

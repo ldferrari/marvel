@@ -7,7 +7,7 @@ export const apiComics = async () => (
   .then((comicsAll) => comicsAll.json().then((data) => data.data.results))
 );
 
-export const apiComicDetails = async (id) => (
+export const apiComicByID = async (id) => (
   fetch(`https://gateway.marvel.com:443/v1/public/comics/${id}?ts=${ts}&apikey=${publicKey}&hash=${md5}`)
   .then((comic) => comic.json().then((data) => data.data.results))
 );

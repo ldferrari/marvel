@@ -2,14 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 export default function ComicsCardImage(props) {
-  const { comicsIten } = props;
+  const { comicItens } = props;
   return (
     <div>
       <div className="divImage">
         <img
-          src={ comicsIten.thumbnail.path+'.'+comicsIten.thumbnail.extension }
+          src={ comicItens.thumbnail.path+'.'+comicItens.thumbnail.extension }
           className="card-image"
-          alt={ comicsIten.name }
+          alt={ comicItens.name }
         />
       </div>
     </div>
@@ -17,5 +17,5 @@ export default function ComicsCardImage(props) {
 }
 
 ComicsCardImage.propTypes = {
-  comicsIten: PropTypes.arrayOf(PropTypes.object).isRequired
+  comicItens: PropTypes.arrayOf(PropTypes.object).isRequired
 };

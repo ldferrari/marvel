@@ -14,7 +14,7 @@ const CharactersCard = (props) => {
         <CharactersCardImage characterItens={ characterItens } />
         <CharactersCardName characterItens={ characterItens } />
       </Link>
-        <CharactersFavoriteButton characterItens={ characterItens }/>
+      <CharactersFavoriteButton characterItens={ characterItens }/>
     </div>
   );
 };
