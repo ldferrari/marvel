@@ -6,10 +6,10 @@ export default function ButtonConfig() {
   return (
     <Link
       to="/profile"
-      className="linkConfig"
+      className="link-config"
     >
-      <button className="buttonConfig">
-        <img src={ configButton } className="imgConfig" />
+      <button className="button-config">
+        <img src={ configButton } className="img-config" />
       </button>
     </Link>
   );

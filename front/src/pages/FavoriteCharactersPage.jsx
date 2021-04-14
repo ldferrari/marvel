@@ -9,7 +9,7 @@ const FavoriteCharactersPage = () => {
   if (!token || token === "undefined") return <Redirect to="/login" />;
   return (
     <div className="comicsCharactersMain">
-      <Menu />
+      <Menu title="PERSONAGENS FAVORITOS" />
       <FavoriteCharactersMain />
     </div>
   );

@@ -3,7 +3,7 @@ import RegisterName from '../components/RegisterPage/RegisterName';
 import RegisterEmail from '../components/RegisterPage/RegisterEmail';
 import RegisterPassword from '../components/RegisterPage/RegisterPassword';
 import RegisterButton from '../components/RegisterPage/RegisterButton';
-import VoltarButton from '../components/RoteButton';
+import ButtonLogout from '../components/ButtonLogout';
 import marvelMenu from '../image/marvelMenu.svg';
 import '../css/register.css';
 
@@ -11,9 +11,15 @@ export default function RegisterPage(props) {
   return (
     <div className="allRegistro">
       <div className="registerHeader">
-        <h2 className="title">Registro</h2>
-        <img src={marvelMenu} className="marvelImage" />
-        <VoltarButton rota="/login" texto="VOLTAR" />
+        <div className="leftMenu">
+          <h2 className="title">Registro</h2>
+        </div>
+        <div className="centerMenu">
+          <img src={marvelMenu} className="marvelImage" />
+        </div>
+        <div className="rigthMenu">
+          <ButtonLogout rota="/login" texto="VOLTAR" />
+        </div>
       </div>
       <div className="bodyRegistro">
         <RegisterName />

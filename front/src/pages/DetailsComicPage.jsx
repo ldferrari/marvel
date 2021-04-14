@@ -17,7 +17,7 @@ const ComicDatails = (props) => {
   if (!token || token === "undefined") return <Redirect to="/login" />;
   return (
     <div className="datails">
-      <Menu />
+      <Menu title="QUADRINHO" />
       <ComicDetailsMain />
     </div>
   );

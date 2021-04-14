@@ -73,6 +73,25 @@
   .check {
     display: none;
   }
+
+  .titleRelacionados {
+    color: rgb(236, 28, 28);
+    padding-top: 60px;
+    font-size: 50px;
+    font-weight: 900;
+    -webkit-text-stroke-color: rgb(0, 0, 0); /* cor da borda */
+    -webkit-text-stroke-width: 2.0px; /* largura da borda */
+  }
+
+  .relacionados {
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+
+  }
 }
 
 @media only screen and ( max-width : 600px ) {
@@ -115,13 +134,20 @@
     width: 100%;
   }
 
-  .detailsName {
+  .detailsNameTitle {
     color: black;
-    font-size: 30px;
     height: 30%;
     margin: 0 10%;
     padding: 5% 0 0;
     width: 80%;
+  }
+
+  .detailsName {
+    font-size: 25px;
+  }
+
+  .detailsTitle {
+    font-size: 20px;
   }
 
   .datailsDescription {
@@ -144,5 +170,24 @@
 
   .check {
     display: none;
+  }
+
+  .titleRelacionados {
+    color: rgb(236, 28, 28);
+    padding-top: 50px;
+    font-size: 30px;
+    font-weight: 900;
+    -webkit-text-stroke-color: rgb(0, 0, 0); /* cor da borda */
+    -webkit-text-stroke-width: 2.0px; /* largura da borda */
+  }
+
+  .relacionados {
+    background-color: rgb(49, 49, 49);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    padding-bottom: 40px;
+    padding-top: 20px;
+
   }
 }
