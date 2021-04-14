@@ -1,4 +1,4 @@
-![logo Marvel](./../front/src/image/larvelMenu.svg)
+![logo Marvel](./front/src/image/larvelMenu.svg)
 
 ### Estrutura de pastas
 ![estrutura de pastas](./estrutura.png)
