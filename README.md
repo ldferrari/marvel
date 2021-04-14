@@ -84,6 +84,6 @@ Front-end:
 - Validação se o e-mail possui um formato valido.
 
 ### Créditos
-- projeto crido por Luís dias Ferrari
+- projeto crido por Luís Ferrari
 - e-mail: luisdiasferrari@gmail.com
 - linkdin: https://www.linkedin.com/in/luisdferrari/
