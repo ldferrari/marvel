@@ -3,7 +3,7 @@ import ComicDetailsImage from './ComicDetailsImage';
 import ComicDetailsName from './ComicDetailsName';
 import ComicDatailsDescipton from './ComicDatailsDescipton';
 import ComicFavoriteButton from './ComicFavoriteButton';
-//import ComicListComics from './ComicListComics';
+import ComicListCharacters from './ComicListCharacters';
 
 export default function ComicDatailsMain() {
   return (
@@ -16,7 +16,7 @@ export default function ComicDatailsMain() {
           <ComicFavoriteButton />
         </div>
       </div>
-      {/* <ComicListComics /> */}
+      <ComicListCharacters />
     </div>
   );
 }

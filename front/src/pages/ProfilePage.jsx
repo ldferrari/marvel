@@ -22,7 +22,7 @@ export default function ProfilePage() {
   if (!token || token === "undefined") return <Redirect to="/login" />;
   return (
     <div className="profile">
-      <Menu />
+      <Menu title="CONFIGURAÇÕES" />
       <div className="bodyProfile">
         <ProfileInputName inpName={ inpName } />
         <ProfileInputEmail inpEmail={ inpEmail } />

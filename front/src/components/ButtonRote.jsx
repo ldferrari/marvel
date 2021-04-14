@@ -7,13 +7,10 @@ export default function RoteButton(props) {
   const { rota, texto } = props;
   return (
     <Link
+      className="button-general"
       to={ rota }
-      onClick={ () => {
-        if (rota === "/")
-        localStorage.setItem('token', '');
-      } }
     >
-      <button className="buttonMenu">
+      <button className="button-menu button-search">
         { texto }
       </button>
     </Link>
