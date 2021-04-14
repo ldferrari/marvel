@@ -3,23 +3,24 @@ import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import '../css/menu.css';
 
-export default function ButtonLogout(props) {
-  const { rota, text } = props;
+export default function RoteButton(props) {
+  const { rota, texto } = props;
   return (
     <Link
       to={ rota }
       onClick={ () => {
+        if (rota === "/")
         localStorage.setItem('token', '');
       } }
     >
       <button className="buttonMenu">
-        {text}
+        { texto }
       </button>
     </Link>
   );
 }
 
-ButtonLogout.propTypes = {
+RoteButton.propTypes = {
   rota: PropTypes.string,
-  text: PropTypes.string,
+  texto: PropTypes.string,
 };

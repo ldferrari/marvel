@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import ButtonConfig from './ButtonConfig'
-import ButtonComics from './ButtonComics';
-import ButtonCharacters from './ButtonCharacters';
+import RoteButton from '../RoteButton';
 import ButtonLogout from './ButtonLogout';
 import AppContext from '../../context/AppContext';
 import marvelMenu from '../../image/marvelMenu.svg';
@@ -20,8 +19,10 @@ export default function MenuLateral() {
       <div className="menuCenter">
         <img src={marvelMenu} className="marvelMenuImage" />
         <div className="menuButtonsCenter">
-          <ButtonComics />
-          <ButtonCharacters />
+          <RoteButton texto={ "Personagens" } rota={ "/characters" } />
+          <RoteButton texto={ "Quadrinhos" } rota={ "/comics" } />
+          <RoteButton texto={ "Personagens Favoritos" } rota={ "/favorite_characters" } />
+          <RoteButton texto={ "Quadrinhos Favoritos" } rota={ "/favorite_comics" } />
         </div>
       </div>
       <div className="menuButtonsRight">

@@ -8,10 +8,17 @@ function convertFavorite(characterItens, setFavorite) {
   const saida = {
     id: characterItens.id,
     name: characterItens.name,
-    image: characterItens.thumbnail.path+'.'+characterItens.thumbnail.extension,
+    image: imageValid(characterItens),
   };
   addFavority(saida, setFavorite);
   return saida;
+}
+
+function imageValid(characterItens) {
+  if( characterItens.thumbnail ) {
+    return characterItens.thumbnail.path+'.'+characterItens.thumbnail.extension
+  }
+  return characterItens.image;
 }
 
 function addFavority(character, setFavorite) {

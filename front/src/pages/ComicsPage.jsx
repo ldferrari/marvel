@@ -13,7 +13,7 @@ const Comics = () => {
     [setComicsItens]);
   if (!token || token === "undefined") return <Redirect to="/login" />;
   return (
-    <div>
+    <div className="comicsCharactersMain">
       <Menu />
       <ComicsMain />
     </div>
