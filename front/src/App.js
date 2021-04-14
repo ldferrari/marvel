@@ -4,6 +4,8 @@ import LoginPage from './pages/LoginPage';
 import RegisterPage from './pages/RegisterPage';
 import ComicsPage from './pages/ComicsPage';
 import CharactersPage from './pages/CharactersPage';
+import FavoriteComicsPage from './pages/FavoriteComicsPage';
+import FavoriteCharactersPage from './pages/FavoriteCharactersPage';
 import DatailsComicPage from './pages/DetailsComicPage';
 import DatailsCharacterPage from './pages/DetailsCharacterPage';
 import ProfilePage from './pages/ProfilePage';
@@ -19,6 +21,8 @@ function App() {
           <Route path="/register" component={ RegisterPage } />
           <Route path="/comics/:id_comics" component={ DatailsComicPage } />
           <Route path="/characters/:id_characters" component={ DatailsCharacterPage } />
+          <Route exact path="/favorite_comics" component={ FavoriteComicsPage } />
+          <Route exact path="/favorite_characters" component={ FavoriteCharactersPage } />
           <Route exact path="/comics" component={ ComicsPage } />
           <Route exact path="/characters" component={ CharactersPage } />
           <Route path="/profile" component={ ProfilePage } />

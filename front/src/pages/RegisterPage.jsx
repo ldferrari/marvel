@@ -13,7 +13,7 @@ export default function RegisterPage(props) {
       <div className="registerHeader">
         <h2 className="title">Registro</h2>
         <img src={marvelMenu} className="marvelImage" />
-        <VoltarButton rota="/login" text="VOLTAR" />
+        <VoltarButton rota="/login" texto="VOLTAR" />
       </div>
       <div className="bodyRegistro">
         <RegisterName />

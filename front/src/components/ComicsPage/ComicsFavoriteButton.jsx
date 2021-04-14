@@ -7,11 +7,18 @@ import coraçãoVermelho from '../../image/coraçãoVermelho.png';
 function convertFavorite(comicItens, setFavorite) {
   const saida = {
     id: comicItens.id,
-    name: comicItens.name,
-    image: comicItens.thumbnail.path+'.'+comicItens.thumbnail.extension,
+    title: comicItens.title,
+    image: imageValid(comicItens),
   };
   addFavority(saida, setFavorite);
   return saida;
+}
+
+function imageValid(comicItens) {
+  if( comicItens.thumbnail ) {
+    return comicItens.thumbnail.path+'.'+comicItens.thumbnail.extension
+  }
+  return comicItens.image;
 }
 
 function addFavority(comics, setFavorite) {
