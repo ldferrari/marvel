@@ -1,4 +1,5 @@
-const URL = 'http://localhost:3001/login';
+const port = process.env.PORT || 3001;
+const URL = `http://localhost:${port}/login`;
 
 const fetchUserData = async (userData) => {
   const response = await fetch(URL, {

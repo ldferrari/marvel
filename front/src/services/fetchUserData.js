@@ -1,4 +1,5 @@
-const URL = 'http://localhost:3001/register';
+const port = process.env.PORT || 3001;
+const URL = `http://localhost:${port}/register`;
 
 const fetchUserData = async (userData) => {
   const response = await fetch(URL, {

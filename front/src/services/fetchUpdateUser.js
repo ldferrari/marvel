@@ -1,4 +1,6 @@
-const fetchUpdateUser = (id, body) => fetch(`http://localhost:3001/profile/${id}`, {
+const port = process.env.PORT || 3001;
+
+const fetchUpdateUser = (id, body) => fetch(`http://localhost:${port}/profile/${id}`, {
   method: 'PUT',
   headers: {
     Accept: 'application/json',

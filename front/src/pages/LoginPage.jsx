@@ -19,5 +19,5 @@ export default function LoginPage(props) {
       </div>
       <img src={ marvelLogin } />
     </div>
-  );
+  )
 }
