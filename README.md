@@ -1,5 +1,7 @@
 ![logo Marvel](./front/src/image/marvelLogin.jpg)
 
+link para usar o app https://marvel-front-stone.herokuapp.com/login
+
 ### A aplicação
 
 Aplicação para fazer buscas de quadrinhos e personagens da Marvel.
