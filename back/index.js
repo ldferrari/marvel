@@ -13,5 +13,5 @@ app.get('/', (req, res) => res.status(200).json('tudo certo'))
 app.use(errorMiddlewares);
 
 
-const PORT = 3001;
+const PORT = 3001 || process.env.PORT;
 app.listen(PORT, () => console.log(`PORT: ${PORT} on`));
