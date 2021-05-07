@@ -28,9 +28,7 @@ export default function LoginButtonEntrar({ props }) {
       type="button"
       disabled={ !isEmailValid || !isPasswordValid }
       className="entrarButton"
-      onClick={ () => {
-        login(userData, setUserData, props);
-      } }
+      onClick={ () => login(userData, setUserData, props) }
     >
       ENTRAR
     </button>

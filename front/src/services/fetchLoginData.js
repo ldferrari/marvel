@@ -1,5 +1,4 @@
-const port = process.env.PORT || 3001;
-const URL = `http://localhost:${port}/login`;
+const URL = `https://marvel-back-stone.herokuapp.com/login`;
 
 const fetchUserData = async (userData) => {
   const response = await fetch(URL, {

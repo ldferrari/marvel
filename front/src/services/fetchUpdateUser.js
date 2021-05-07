@@ -1,12 +1,15 @@
-const port = process.env.PORT || 3001;
+const URL = `https://marvel-back-stone.herokuapp.com/profile`;
 
-const fetchUpdateUser = (id, body) => fetch(`http://localhost:${port}/profile/${id}`, {
+const fetchUpdateUser = async (id, body) => {
+  const response = await fetch(`${URL}/${id}`, {
   method: 'PUT',
   headers: {
     Accept: 'application/json',
     'Content-Type': 'application/json',
   },
   body: JSON.stringify(body),
-}).then((response) => response.json().then((data) => data));
+})
+  return response.json().then((data) => data);
+}
 
 export default fetchUpdateUser;
