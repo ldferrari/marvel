@@ -30,7 +30,7 @@ Back-end:
 - Token gerado com JWT.
 
 Front-end:
-- Criado no JavaScript com o Reat.
+- Criado no JavaScript com o React.
 - API feita de (https://developer.marvel.com/).
 - compartilhamento de dados com o context.
 - CSS responsivo em toda a aplicação.
